@@ -25,5 +25,6 @@ export default defineConfig({
     port: parseInt(process.env.PORT || '4173'),
     host: '0.0.0.0',
     strictPort: true,
+    allowedHosts: ['test-dw-lmm.onrender.com'],
   },
 })
