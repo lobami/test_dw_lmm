@@ -1,0 +1,28 @@
+# Render.com deployment configuration for Campaign Analytics Frontend
+# Deploy this frontend as a static site built with Vite
+
+services:
+  - type: static
+    name: campaign-analytics-frontend
+    env: node
+    plan: free
+    branch: main
+    rootDir: frontend
+    buildCommand: npm ci && npm run build
+    # Vite builds to `dist` directory by default
+    staticPublishPath: dist
+    # Custom headers for SPA routing
+    headers:
+      - path: /*
+        headers:
+          X-Frame-Options: DENY
+          X-Content-Type-Options: nosniff
+    # Handle client-side routing
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
+    envVars:
+      - key: VITE_API_URL
+        value: https://campaign-analytics-backend.onrender.com
+        # IMPORTANT: Update this URL after deploying the backend service
