@@ -198,6 +198,51 @@ def run_seed():
         logger.error(f"📋 Error output: {e.stderr}")
         return False
 
+def update_data_types():
+    """Actualiza los tipos de datos de las columnas problemáticas"""
+    try:
+        logger.info("🔄 Actualizando tipos de datos a BigInteger...")
+        
+        database_url = os.getenv('DATABASE_URL')
+        engine = create_engine(database_url)
+        
+        with engine.connect() as conn:
+            # Verificar si las columnas necesitan actualización
+            result = conn.execute(text("""
+                SELECT data_type 
+                FROM information_schema.columns 
+                WHERE table_name = 'campaign_periods' 
+                AND column_name = 'impactos_periodo_personas'
+            """))
+            
+            current_type = result.scalar()
+            
+            if current_type == 'integer':
+                logger.info("🔄 Convirtiendo columnas de integer a bigint...")
+                
+                # Actualizar tipos de datos
+                conn.execute(text("""
+                    ALTER TABLE campaign_periods 
+                    ALTER COLUMN impactos_periodo_personas TYPE BIGINT;
+                """))
+                
+                conn.execute(text("""
+                    ALTER TABLE campaign_periods 
+                    ALTER COLUMN impactos_periodo_vehiculos TYPE BIGINT;
+                """))
+                
+                conn.commit()
+                logger.info("✅ Tipos de datos actualizados exitosamente")
+            else:
+                logger.info("⏭️ Los tipos de datos ya están actualizados")
+                
+        return True
+        
+    except Exception as e:
+        logger.error(f"❌ Error actualizando tipos de datos: {e}")
+        return False
+
+
 def main():
     """Función principal que orquesta todo el proceso"""
     logger.info("🚀 Iniciando proceso inteligente de migraciones...")
@@ -238,6 +283,11 @@ def main():
             sys.exit(1)
     else:
         logger.info("⏭️ Saltando migraciones (tablas ya existen)")
+    
+    # 3.5. Actualizar tipos de datos si es necesario
+    if not update_data_types():
+        logger.error("❌ Fallo actualizando tipos de datos")
+        sys.exit(1)
     
     # 4. Verificar si necesita datos iniciales
     if not check_if_seeded():
