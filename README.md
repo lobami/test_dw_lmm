@@ -39,6 +39,10 @@ https://github.com/user-attachments/assets/d5397b60-bff4-4c93-8a1c-b522431d56b8
 3. **Gerente de Marketing**: Obtener insights rápidos sobre el ROI de campañas publicitarias
 4. **Equipo Comercial**: Presentar datos convincentes a clientes usando visualizaciones profesionales
 
+
+https://github.com/user-attachments/assets/1f7ccbe5-22a7-4e76-99e1-85176e75f43b
+
+
 ---
 
 ## 🚀 Demo en Vivo
@@ -46,6 +50,7 @@ https://github.com/user-attachments/assets/d5397b60-bff4-4c93-8a1c-b522431d56b8
 - **Frontend**: [Disponible en Render]
 - **Backend API**: [Disponible en Render]
 - **Documentación API**: [URL]/docs (Swagger UI automático)
+
 
 ---
 
