@@ -1,0 +1,73 @@
+# Render.com deployment configuration for Campaign Analytics Backend
+# Deploy this backend as a Docker web service with managed PostgreSQL
+
+services:
+  - type: web
+    name: campaign-analytics-backend
+    env: docker
+    plan: starter
+    branch: main
+    rootDir: backend
+    dockerfilePath: ./Dockerfile
+    # Use the migration script that runs alembic upgrade + starts uvicorn
+    # startCommand: ./scripts/start_with_migrations.sh
+    envVars:
+      - key: ENV
+        value: production
+      - key: LOG_LEVEL
+        value: INFO
+      - key: FRONTEND_ORIGINS
+        value: https://campaign-analytics-frontend.onrender.com
+      # IMPORTANT: Set these secrets in Render Dashboard, don't commit them:
+      # - SECRET_KEY (generate a strong random key)
+      # - DATABASE_URL (will be auto-set when you link the database below)
+
+databases:
+  - name: campaign-analytics-db
+    plan: starter
+    region: oregon
+    postgresVersion: "15"
+
+# Migration job - run this manually after first deploy to set up schema and data
+jobs:
+  - type: job
+    name: run-migrations-and-seed
+    env: docker
+    branch: main
+    plan: starter
+    rootDir: backend
+    dockerfilePath: ./Dockerfile
+    # This job runs migrations and optionally seeds initial data
+    command: bash -c "alembic upgrade head && python seed.py"
+    envVars:
+      # Link the same DATABASE_URL and secrets as the web service
+      - key: ENV
+        value: production
+    # environment (DATABASE_URL) is configured in Render for the job to use.
+    command: alembic upgrade head
+    # Environment variables for the job. Best practices:
+    # - For production, create a secret named DATABASE_URL in the Render
+    #   dashboard containing the managed Postgres connection string and map it
+    #   here (or let the dashboard inject it). Do NOT commit secrets to source.
+    envVars:
+      - key: DATABASE_URL
+        # value: ${{ secrets.DATABASE_URL }}  # set this in Render UI / CI
+        # Alternatively, if you created the managed DB via this render.yaml,
+        # set the DATABASE_URL in the Web Service's env vars using the
+        # connection string Render shows for the database resource.
+      - key: SECRET_KEY
+        # value: ${{ secrets.SECRET_KEY }}
+
+# 2) Cron job: schedule migrations (less common) — example cron format using
+#    Render's scheduled jobs. Many teams prefer manual or CI-driven migrations
+#    to avoid surprises in production; keep scheduled migrations only for
+#    maintenance windows if you fully trust automated schema changes.
+
+#cron_jobs:
+#  - name: nightly-migrations
+#    schedule: "0 3 * * *" # daily at 03:00 UTC
+#    command: alembic upgrade head
+#    env: docker
+#    branch: main
+#    plan: starter
+

@@ -1,0 +1,18 @@
+fastapi
+uvicorn
+sqlalchemy
+numpy
+pandas
+python-multipart
+python-jose[cryptography]
+passlib[bcrypt]
+pytest
+httpx
+python-dotenv
+psycopg2-binary
+alembic
+
+# Observability and linting/dev
+prometheus_client
+ruff
+python-json-logger

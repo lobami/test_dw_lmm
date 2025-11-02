@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:15
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: campaigns
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    # In production on Render you will use a managed Postgres instance and set
+    # DATABASE_URL to the connection string provided by Render. This compose
+    # file is intended as a production-like local example.
+
+  backend:
+    build: .
+    restart: always
+    env_file: .env
+    environment:
+      # Prefer injecting DATABASE_URL from environment (Render sets it for you)
+      # Example local DATABASE_URL (when using this compose):
+      # DATABASE_URL: postgresql://postgres:postgres@db:5432/campaigns
+      - DATABASE_URL
+      - SECRET_KEY
+      - FRONTEND_ORIGINS
+      - LOG_LEVEL
+      - ENV=production
+    depends_on:
+      - db
+    ports:
+      - "8000:8000"
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000
+
+volumes:
+  pgdata:

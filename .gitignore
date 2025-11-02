@@ -1,0 +1,73 @@
+# Campaign Analytics - Global .gitignore
+
+# Environment files (contain secrets)
+.env
+.env.local
+.env.production
+.env.development
+
+# Backend Python
+backend/__pycache__/
+backend/*.py[cod]
+backend/*$py.class
+backend/.venv/
+backend/venv/
+backend/.pytest_cache/
+backend/.coverage
+backend/htmlcov/
+backend/.mypy_cache/
+backend/.ruff_cache/
+backend/campaigns.db
+backend/campaigns.db-journal
+
+# Frontend Node.js
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+frontend/.cache/
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/.DS_Store
+
+# Database backups (may contain sensitive data)
+*.dump
+*.sql
+backups/
+
+# Docker
+.docker/
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Compiled binaries
+*.exe
+*.dll
+*.so
+*.dylib

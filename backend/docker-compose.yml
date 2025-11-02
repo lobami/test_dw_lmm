@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  backend:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=sqlite:///./campaigns.db
+      - FRONTEND_ORIGINS=http://localhost:5173
+      - LOG_LEVEL=INFO
+    volumes:
+      - .:/app
+    # For production replace with a real DB service and remove host mounting
