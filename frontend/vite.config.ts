@@ -22,7 +22,8 @@ export default defineConfig({
     host: true, // Allow external connections for dev
   },
   preview: {
-    port: 4173,
-    host: true,
+    port: parseInt(process.env.PORT || '4173'),
+    host: '0.0.0.0',
+    strictPort: true,
   },
 })
