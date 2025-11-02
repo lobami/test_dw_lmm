@@ -7,6 +7,11 @@
 
 Esta es una **aplicación web completa** diseñada para **analizar y visualizar datos de campañas publicitarias**. Permite a los usuarios explorar información detallada sobre el rendimiento de campañas publicitarias a través de **gráficas interactivas** y **tablas de datos**, proporcionando insights valiosos para la toma de decisiones en marketing.
 
+
+https://github.com/user-attachments/assets/d5397b60-bff4-4c93-8a1c-b522431d56b8
+
+
+
 ### 🔍 Funcionalidades Principales
 
 **Para el Usuario Final:**
