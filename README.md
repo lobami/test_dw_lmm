@@ -42,6 +42,8 @@ https://github.com/user-attachments/assets/d5397b60-bff4-4c93-8a1c-b522431d56b8
 
 https://github.com/user-attachments/assets/1f7ccbe5-22a7-4e76-99e1-85176e75f43b
 
+<img width="1509" height="399" alt="image" src="https://github.com/user-attachments/assets/f506b627-5ffa-446d-83be-52bc26846ec6" />
+
 
 ---
 
@@ -54,19 +56,6 @@ https://github.com/user-attachments/assets/1f7ccbe5-22a7-4e76-99e1-85176e75f43b
 
 ---
 
-## 📸 Capturas de Pantalla
-
-### Dashboard Principal
-- Lista paginada de campañas con filtros
-- Información clave: nombre, tipo, fechas, impactos y alcance
-
-### Análisis Detallado
-- **Vista de Gráficas**: Visualizaciones interactivas con Chart.js
-- **Vista de Tablas**: Datos detallados y ordenables
-- **Análisis Demográfico**: Distribución por NSE, edad y género
-- **Análisis Geográfico**: Performance por ubicación
-
----
 
 ## ✨ Características Técnicas Destacadas
 
