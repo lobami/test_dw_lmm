@@ -6,7 +6,7 @@ services:
     name: campaign-analytics-backend
     env: docker
     plan: starter
-    branch: main
+    branch: master
     rootDir: backend
     dockerfilePath: ./Dockerfile
     # Use the migration script that runs alembic upgrade + starts uvicorn
@@ -33,7 +33,7 @@ jobs:
   - type: job
     name: run-migrations-and-seed
     env: docker
-    branch: main
+    branch: master
     plan: starter
     rootDir: backend
     dockerfilePath: ./Dockerfile

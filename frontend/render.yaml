@@ -6,7 +6,7 @@ services:
     name: campaign-analytics-frontend
     env: node
     plan: free
-    branch: main
+    branch: master
     rootDir: frontend
     buildCommand: npm ci && npm run build
     # Vite builds to `dist` directory by default
