@@ -49,9 +49,13 @@ https://github.com/user-attachments/assets/1f7ccbe5-22a7-4e76-99e1-85176e75f43b
 
 ## 🚀 Demo en Vivo
 
-- **Frontend**: [Disponible en Render]
-- **Backend API**: [Disponible en Render]
-- **Documentación API**: [URL]/docs (Swagger UI automático)
+- **Frontend**: [https://test-dw-lmm.onrender.com](https://test-dw-lmm.onrender.com)
+- **Backend API**: [https://campaign-analytics-backend-ausq.onrender.com](https://campaign-analytics-backend-ausq.onrender.com)
+- **Documentación API**: [https://campaign-analytics-backend-ausq.onrender.com/docs](https://campaign-analytics-backend-ausq.onrender.com/docs) (Swagger UI automático)
+
+### 🔑 Credenciales de Prueba
+- **Usuario**: `admin@admin.com`
+- **Contraseña**: `admin`
 
 
 ---
@@ -369,13 +373,13 @@ npm test
 ENV=production
 SECRET_KEY=tu-secret-key-super-seguro-aqui
 DATABASE_URL=postgresql://user:pass@host:5432/dbname
-FRONTEND_ORIGINS=https://tu-frontend.onrender.com
+FRONTEND_ORIGINS=https://test-dw-lmm.onrender.com
 LOG_LEVEL=INFO
 ```
 
 #### Frontend (Static Site)
 ```bash
-VITE_API_URL=https://tu-backend.onrender.com
+VITE_API_URL=https://campaign-analytics-backend-ausq.onrender.com
 ```
 
 ### Pasos para Deploy
@@ -500,7 +504,7 @@ Start Command: ./scripts/start_with_migrations.sh
 ENV: production
 SECRET_KEY: [SECRET]
 DATABASE_URL: [AUTO-LINKED]
-FRONTEND_ORIGINS: https://campaign-analytics-frontend.onrender.com
+FRONTEND_ORIGINS: https://test-dw-lmm.onrender.com
 ```
 
 #### **Frontend Static Site**
@@ -516,7 +520,7 @@ Build Command: npm ci && npm run build
 Publish Directory: dist
 
 # Environment Variables
-VITE_API_URL: https://campaign-analytics-backend.onrender.com
+VITE_API_URL: https://campaign-analytics-backend-ausq.onrender.com
 ```
 
 ### 🚀 Deployment Workflow
