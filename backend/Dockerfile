@@ -20,6 +20,7 @@ COPY . /app
 
 # make scripts executable
 RUN chmod +x /app/scripts/start_with_migrations.sh || true
+RUN chmod +x /app/smart_migrations.py || true
 
 # expose port
 EXPOSE 8000

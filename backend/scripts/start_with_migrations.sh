@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# Run DB migrations, then start the app. This script is safe to run multiple times
-# because Alembic upgrades are idempotent.
+# Run smart migrations that check if they need to be executed
+# This prevents duplicate migration conflicts during deployment
 
-echo "Running alembic migrations..."
-alembic upgrade head
+echo "🚀 Starting smart migration process..."
+python smart_migrations.py
 
-echo "Starting uvicorn..."
+echo "🌐 Starting uvicorn server..."
 exec uvicorn app.main:app --host 0.0.0.0 --port 8000
