@@ -259,6 +259,9 @@ La aplicación sigue un patrón **cliente-servidor moderno** con separación com
 - **@testing-library/react** - Testing centrado en usuario
 - **@testing-library/user-event** - Simulación de interacciones
 - **Happy DOM** - DOM environment para testing
+- 
+<img width="997" height="268" alt="image" src="https://github.com/user-attachments/assets/40f22cab-143c-4cea-a4f3-c04d665317e5" />
+
 
 ### 🔧 DevOps & Deployment
 
