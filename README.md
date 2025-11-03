@@ -64,21 +64,21 @@ https://github.com/user-attachments/assets/1f7ccbe5-22a7-4e76-99e1-85176e75f43b
 
 ## 🛠️ Cómo está hecho (la parte técnica)
 
-### 🎨 Frontend que me enorgullece
+### 🎨 Frontend
 Usé **React 18 con TypeScript** porque, honestamente, JavaScript vanilla en 2025 ya no va. Agregué:
 - **Gráficas súper smooth** con Chart.js (react-chartjs-2 para ser precisos)
 - **Tablas que no dan pereza** gracias a @tanstack/react-table
 - **Formularios que validan bien** con react-hook-form + zod
 - **Diseño responsive** con Tailwind CSS (porque la vida es muy corta para CSS vanilla)
 
-### 🚀 Backend que puede con todo
+### 🚀 Backend
 Elegí **FastAPI** porque es rápido, moderno, y la documentación automática es un regalo del cielo:
 - **Base de datos**: SQLite para desarrollo → PostgreSQL para producción (smooth transition)
 - **Autenticación JWT** con refresh tokens (porque seguridad ante todo)
 - **Migraciones automáticas** con Alembic (no más SQLs manuales, gracias)
 - **Tests completos** con pytest (sí, testeo mi código 😅)
 
-### 🔒 Lo que me importa: Seguridad y Calidad
+### 🔒 Seguridad y Calidad
 - **Autenticación robusta** con manejo proper de sesiones
 - **Validación everywhere**: frontend y backend cubiertos
 - **Tests** que me dan confianza para deployar
@@ -87,7 +87,7 @@ Elegí **FastAPI** porque es rápido, moderno, y la documentación automática e
 
 ---
 
-## ✅ Todo lo que logré implementar
+## ✅ Todo lo que se logro implementar
 
 ### 🏠 La página principal (mi orgullo)
 - ✅ **Tabla responsive** que se ve bien en cualquier dispositivo
@@ -95,7 +95,7 @@ Elegí **FastAPI** porque es rápido, moderno, y la documentación automática e
 - ✅ **Paginación que funciona** (5 elementos por página, fácil de navegar)
 - ✅ **Click en cualquier fila** y vas directo al detalle
 
-### 🔧 Filtros que realmente sirven
+### 🔧 Filtros
 - ✅ **Por tipo de campaña**:
   - Ver todas las campañas de una
   - Solo las mensuales
@@ -103,7 +103,7 @@ Elegí **FastAPI** porque es rápido, moderno, y la documentación automática e
 - ✅ **Por fechas** con selectores que validan rangos (nada de fechas imposibles)
 - ✅ **Combinación de filtros** que funciona smooth
 
-### 📊 La visualización (mi parte favorita)
+### 📊 La visualización
 Cuando clickeas cualquier campaña, podés alternar entre dos vistas:
 
 **🎨 Gráficas interactivas (porque los datos bonitos venden más):**
@@ -123,12 +123,12 @@ Cuando clickeas cualquier campaña, podés alternar entre dos vistas:
    - Dona con los top 8 estados
    - Top 10 sitios que más rinden
 
-**📋 Tablas detalladas (para los que aman los números):**
+**📋 Tablas detalladas:**
 - ✅ Todas las tablas son ordenables y filtradas
 - ✅ Números formateados con separadores (porque 1000000 vs 1,000,000)
 - ✅ Toda la data disponible, no solo resúmenes
 
-### 🔐 Login y seguridad (hecho como corresponde)
+### 🔐 Login y seguridad
 - ✅ **Registro** con validación de email y password decente
 - ✅ **Login** con JWT tokens que no joden
 - ✅ **Refresh tokens** para que no te loguees cada 5 minutos
@@ -136,7 +136,7 @@ Cuando clickeas cualquier campaña, podés alternar entre dos vistas:
 - ✅ **Rutas protegidas** - sin login, no ves nada
 - ✅ **Manejo de sesiones expiradas** con redirects automáticos
 
-### 🎨 UX que no da vergüenza
+### 🎨 UX
 - ✅ **Navegación intuitiva** con breadcrumbs y botones que tienen sentido
 - ✅ **Loading states** porque waiting without feedback es torture
 - ✅ **Error handling** con mensajes que ayudan, no confunden
@@ -146,9 +146,9 @@ Cuando clickeas cualquier campaña, podés alternar entre dos vistas:
 
 ---
 
-## 🛠️ Cómo armé todo esto (para los que les gusta el detalle técnico)
 
-### 🎯 La arquitectura (nada complicado, todo bien separado)
+
+### 🎯 La arquitectura
 Armé todo con una **separación frontend-backend clara**, comunicándose por API REST. Nada de monolitos raros:
 
 ```
@@ -167,7 +167,7 @@ Armé todo con una **separación frontend-backend clara**, comunicándose por AP
                                    └─────────────────┘
 ```
 
-### 🚀 El backend (FastAPI porque es 2025, no 2015)
+### 🚀 El backend
 
 **Lo que elegí y por qué:**
 - **FastAPI** - Porque es rápido, moderno, y la documentación automática es una belleza
@@ -177,16 +177,16 @@ Armé todo con una **separación frontend-backend clara**, comunicándose por AP
 - **PostgreSQL en prod, SQLite en dev** - Porque desarrollo local debe ser simple
 - **Pytest** - Testing que realmente funciona y no es una tortura escribir
 
-**Lo que me enorgullece del backend:**
+**Lo que me gusta del backend:**
 - Auto-documentación con Swagger (probala en `/docs`)
 - Validación automática con Pydantic v2
 - Type hints en todo lado (mi IDE me ama)
 - Tests que cubren todo lo importante
 - Manejo de errores que no te deja adivinando
 
-### 🎨 El frontend (React + TypeScript, the dream team)
+### 🎨 El frontend 
 
-**Stack que elegí:**
+**Stack:**
 - **React 18 + TypeScript** - Porque JavaScript sin tipos en proyectos serios es masoquismo
 - **Vite** - Build tool que no te hace esperar 10 minutos por cada cambio
 - **Tailwind CSS** - CSS utility-first que hace que diseñar sea divertido otra vez
@@ -200,7 +200,7 @@ Armé todo con una **separación frontend-backend clara**, comunicándose por AP
 - **Type safety** completo entre frontend y backend
 - **Code splitting** automático (performance matters)
 
-### 🚀 Deploy y DevOps (porque el código que no está en producción no sirve)
+### 🚀 Deploy y DevOps 
 
 **Cómo lo deployé:**
 - **Render.com** - Elegí esto porque es simple pero potente
@@ -222,7 +222,7 @@ Armé todo con una **separación frontend-backend clara**, comunicándose por AP
 
 ---
 
-## 🛠️ ¿Querés correrlo local?
+## 🛠️ ¿Quieres correrlo local?
 
 **Lo que necesitás:**
 - Python 3.9+ (obvio)
@@ -415,7 +415,7 @@ npm test  # también estos
 
 ## � Lo que más me gusta de este proyecto
 
-### 💡 Decisiones técnicas de las que estoy orgulloso:
+### 💡 Decisiones técnicas:
 1. **Smart migrations** - Sistema que previene conflictos de migraciones en deployment
 2. **Type safety end-to-end** - Desde la DB hasta el frontend, todo tipado
 3. **Error handling robusto** - Manejo de errores que ayuda, no confunde
@@ -423,7 +423,7 @@ npm test  # también estos
 5. **Responsive design** - Se ve bien en cualquier dispositivo sin hacks
 6. **Performance optimizations** - Code splitting, lazy loading, optimized queries
 
-### 🚀 Features que demuestran experiencia:
+### 🚀 Features:
 - **JWT con refresh tokens** (porque security matters)
 - **Database migrations** manejadas automáticamente
 - **CI/CD pipeline** que funciona
@@ -864,12 +864,3 @@ Si tienes problemas o preguntas:
 
 ---
 
-### 👨‍💻 **Sobre el Desarrollador**
-
-**Loth Mejía** - Full Stack Developer  
-Esta prueba técnica demuestra competencias en:
-- ✅ **Frontend Moderno**: React, TypeScript, Tailwind CSS
-- ✅ **Backend Robusto**: FastAPI, SQLAlchemy, PostgreSQL
-- ✅ **DevOps**: Docker, CI/CD, Cloud Deployment
-- ✅ **Testing**: Unit Tests, Integration Tests, Coverage
-- ✅ **Arquitectura**: Clean Code, SOLID Principles, Scalable Design
