@@ -1,46 +1,46 @@
-# 📊 Mi Aplicación de Análisis de Campañas Publicitarias
+# 📊 Aplicación de Análisis de Campañas Publicitarias
 
 ¡Hola! 👋 Soy **Loth Mejía** y este es mi proyecto de análisis de campañas publicitarias. Lo desarrollé como una demostración completa de mis habilidades como Full Stack Developer.
 
-## 🤔 ¿Qué hace mi aplicación?
+## 🤔 ¿Qué hace esta aplicación?
 
-Básicamente, creé una plataforma web donde puedes **analizar campañas publicitarias de manera súper visual e intuitiva**. Imagínate tener todos los datos de tus campañas publicitarias scattered en CSVs aburridos... ¡Mi app los convierte en gráficas preciosas y tablas que realmente te ayudan a entender qué está pasando!
+Desarrollé una plataforma web donde puedes **analizar campañas publicitarias de manera visual e intuitiva**. La aplicación transforma datos de campañas publicitarias almacenados en archivos CSV en gráficas interactivas y tablas que facilitan la comprensión de la información.
 
-La idea es que cualquier persona del equipo de marketing pueda entrar, navegar por las campañas, filtrar lo que necesite, y ver al instante cómo está funcionando cada campaña sin necesidad de ser un experto en Excel.
+La idea es que cualquier persona del equipo de marketing pueda acceder, navegar por las campañas, aplicar filtros según sus necesidades, y visualizar instantáneamente el rendimiento de cada campaña sin necesidad de ser un experto en Excel.
 
 
 https://github.com/user-attachments/assets/d5397b60-bff4-4c93-8a1c-b522431d56b8
 
 
 
-### � Lo que puedes hacer con mi app
+### 🚀 Lo que puedes hacer con esta aplicación
 
 **Si eres del equipo de marketing:**
-- 📋 Ver todas tus campañas en un **dashboard súper clean** con paginación que funciona de maravilla
-- 🔎 **Filtrar como un pro**: por tipo de campaña, fechas, o lo que se te ocurra
-- 📊 **Gráficas que te van a encantar**: barras, líneas, donas... todo interactivo y bonito
-- 📈 Hacer **deep dive** en cualquier campaña específica con métricas detalladas
-- 👥 Ver datos demográficos segmentados (¡sí, incluye NSE, edad y género!)
-- 🗺️ Análisis geográfico porque obviamente importa dónde están tus audiencias
-- 📱 Usar la app desde tu cel, tablet, o compu - **responsive design hecho bien**
+- 📋 Visualizar todas las campañas en un **dashboard limpio** con paginación eficiente
+- 🔎 **Filtrar de manera profesional**: por tipo de campaña, fechas, o cualquier criterio necesario
+- 📊 **Gráficas interactivas**: barras, líneas, donas... todo completamente interactivo
+- 📈 Realizar **análisis detallado** de cualquier campaña específica con métricas completas
+- 👥 Consultar datos demográficos segmentados (incluye NSE, edad y género)
+- 🗺️ Análisis geográfico para entender la distribución de audiencias
+- 📱 Usar la aplicación desde dispositivos móviles, tablets o computadoras - **diseño responsive completo**
 
-**Si eres más técnico y te gustan los datos:**
-- 📊 **Tres tipos de análisis** que realmente importan:
+**Si tienes un perfil más técnico:**
+- 📊 **Tres tipos de análisis** fundamentales:
   - **Vista general**: métricas consolidadas de toda la campaña
-  - **Por períodos**: cómo evoluciona tu campaña en el tiempo
-  - **Por sitios**: qué ubicaciones y tipos de muebles funcionan mejor
-- 🔄 **Switching súper fácil** entre gráficas bonitas y tablas con todos los datos
-- 📁 Todo basado en **datos reales** de CSVs (nada de Lorem Ipsum aquí)
-- 🎯 **Métricas que importan**: impactos, alcance, frecuencia... todo lo que necesitas
+  - **Por períodos**: evolución temporal de la campaña
+  - **Por sitios**: rendimiento por ubicación y tipos de muebles
+- 🔄 **Alternancia sencilla** entre gráficas interactivas y tablas con datos completos
+- 📁 Basado en **datos reales** extraídos de archivos CSV
+- 🎯 **Métricas relevantes**: impactos, alcance, frecuencia y todas las métricas necesarias
 
-### � ¿Para quién hice esto?
+### 💼 ¿Para quién desarrollé esto?
 
-Pensé en diferentes tipos de usuarios cuando lo desarrollé:
+Consideré diferentes tipos de usuarios durante el desarrollo:
 
-1. **El planificador de medios** que necesita evaluar campañas pasadas para planear las siguientes
-2. **El analista digital** que quiere comparar qué tipo de campañas funcionan mejor
-3. **El gerente** que necesita insights rápidos sin meterse en spreadsheets complicados
-4. **El equipo comercial** que quiere mostrar resultados impresionantes a los clientes
+1. **El planificador de medios** que necesita evaluar campañas históricas para planificar futuras inversiones
+2. **El analista digital** que busca comparar la efectividad entre diferentes tipos de campañas
+3. **El gerente** que requiere insights rápidos sin complicaciones técnicas
+4. **El equipo comercial** que desea presentar resultados convincentes a los clientes
 
 
 https://github.com/user-attachments/assets/1f7ccbe5-22a7-4e76-99e1-85176e75f43b
@@ -54,7 +54,7 @@ https://github.com/user-attachments/assets/1f7ccbe5-22a7-4e76-99e1-85176e75f43b
 
 - **Mi aplicación**: [https://test-dw-lmm.onrender.com](https://test-dw-lmm.onrender.com)
 - **La API backend**: [https://campaign-analytics-backend-ausq.onrender.com](https://campaign-analytics-backend-ausq.onrender.com)
-- **Documentación de la API**: [https://campaign-analytics-backend-ausq.onrender.com/docs](https://campaign-analytics-backend-ausq.onrender.com/docs) (auto-generada con Swagger, obvio)
+- **Documentación de la API**: [https://campaign-analytics-backend-ausq.onrender.com/docs](https://campaign-analytics-backend-ausq.onrender.com/docs) (auto-generada con Swagger)
 
 ### 🔑 Para entrar usa estos datos
 - **Email**: `admin@admin.com`
@@ -62,87 +62,87 @@ https://github.com/user-attachments/assets/1f7ccbe5-22a7-4e76-99e1-85176e75f43b
 
 ---
 
-## 🛠️ Cómo está hecho (la parte técnica)
+## 🛠️ Arquitectura técnica
 
 ### 🎨 Frontend
-Usé **React 18 con TypeScript** porque, honestamente, JavaScript vanilla en 2025 ya no va. Agregué:
-- **Gráficas súper smooth** con Chart.js (react-chartjs-2 para ser precisos)
-- **Tablas que no dan pereza** gracias a @tanstack/react-table
-- **Formularios que validan bien** con react-hook-form + zod
-- **Diseño responsive** con Tailwind CSS (porque la vida es muy corta para CSS vanilla)
+Desarrollé el frontend usando **React 18 con TypeScript** para garantizar robustez y mantenibilidad. Incluye:
+- **Gráficas interactivas** implementadas con Chart.js (react-chartjs-2)
+- **Tablas avanzadas** utilizando @tanstack/react-table
+- **Formularios con validación** mediante react-hook-form + zod
+- **Diseño responsive** construido con Tailwind CSS
 
 ### 🚀 Backend
-Elegí **FastAPI** porque es rápido, moderno, y la documentación automática es un regalo del cielo:
-- **Base de datos**: SQLite para desarrollo → PostgreSQL para producción (smooth transition)
-- **Autenticación JWT** con refresh tokens (porque seguridad ante todo)
-- **Migraciones automáticas** con Alembic (no más SQLs manuales, gracias)
-- **Tests completos** con pytest (sí, testeo mi código 😅)
+Elegí **FastAPI** por su rendimiento y características modernas:
+- **Base de datos**: SQLite para desarrollo → PostgreSQL para producción
+- **Autenticación JWT** con refresh tokens para seguridad
+- **Migraciones automáticas** con Alembic
+- **Cobertura de tests completa** con pytest
 
 ### 🔒 Seguridad y Calidad
-- **Autenticación robusta** con manejo proper de sesiones
-- **Validación everywhere**: frontend y backend cubiertos
-- **Tests** que me dan confianza para deployar
-- **Code quality** con linting automático
-- **Environment variables** porque hardcodear credenciales es de amateur
+- **Autenticación robusta** con manejo apropiado de sesiones
+- **Validación de datos** en frontend y backend
+- **Tests automatizados** para garantizar calidad
+- **Linting automático** para consistencia de código
+- **Variables de entorno** para configuración segura
 
 ---
 
-## ✅ Todo lo que se logro implementar
+## ✅ Funcionalidades implementadas
 
-### 🏠 La página principal (mi orgullo)
-- ✅ **Tabla responsive** que se ve bien en cualquier dispositivo
-- ✅ **Toda la info importante**: nombres, tipos, fechas, impactos, alcance
-- ✅ **Paginación que funciona** (5 elementos por página, fácil de navegar)
-- ✅ **Click en cualquier fila** y vas directo al detalle
+### 🏠 Vista principal
+- ✅ **Tabla responsive** optimizada para cualquier dispositivo
+- ✅ **Información completa**: nombres, tipos, fechas, impactos, alcance
+- ✅ **Paginación eficiente** (5 elementos por página con navegación intuitiva)
+- ✅ **Navegación directa** al hacer clic en cualquier fila
 
-### 🔧 Filtros
+### 🔧 Sistema de filtros
 - ✅ **Por tipo de campaña**:
-  - Ver todas las campañas de una
+  - Visualizar todas las campañas
   - Solo las mensuales
   - Solo las catorcenales
-- ✅ **Por fechas** con selectores que validan rangos (nada de fechas imposibles)
-- ✅ **Combinación de filtros** que funciona smooth
+- ✅ **Por fechas** con selectores que validan rangos apropiados
+- ✅ **Combinación de filtros** con funcionamiento fluido
 
-### 📊 La visualización
-Cuando clickeas cualquier campaña, podés alternar entre dos vistas:
+### 📊 Sistema de visualización
+Al hacer clic en cualquier campaña, puedes alternar entre dos vistas:
 
-**🎨 Gráficas interactivas (porque los datos bonitos venden más):**
+**🎨 Gráficas interactivas:**
 
 1. **Resumen general** de la campaña:
    - Barras comparativas de impactos y alcance
-   - Dona de distribución demográfica por NSE 
-   - Otra dona por género (porque importa)
+   - Gráfica de dona de distribución demográfica por NSE 
+   - Gráfica de dona de distribución por género
 
 2. **Análisis temporal**:
-   - Barras por período para ver evolución
+   - Barras por período para visualizar evolución
    - Líneas de tendencia que muestran patrones
-   - Todo ordenado cronológicamente (obvio)
+   - Datos ordenados cronológicamente
 
-3. **Breakdown por sitios**:
+3. **Análisis por sitios**:
    - Barras por tipo de mueble
-   - Dona con los top 8 estados
-   - Top 10 sitios que más rinden
+   - Gráfica de dona con los principales 8 estados
+   - Top 10 sitios con mejor rendimiento
 
 **📋 Tablas detalladas:**
 - ✅ Todas las tablas son ordenables y filtradas
-- ✅ Números formateados con separadores (porque 1000000 vs 1,000,000)
-- ✅ Toda la data disponible, no solo resúmenes
+- ✅ Números formateados con separadores para mejor legibilidad
+- ✅ Acceso completo a todos los datos disponibles
 
-### 🔐 Login y seguridad
-- ✅ **Registro** con validación de email y password decente
-- ✅ **Login** con JWT tokens que no joden
-- ✅ **Refresh tokens** para que no te loguees cada 5 minutos
-- ✅ **Logout** que limpia todo proper
-- ✅ **Rutas protegidas** - sin login, no ves nada
-- ✅ **Manejo de sesiones expiradas** con redirects automáticos
+### 🔐 Sistema de autenticación
+- ✅ **Registro** con validación de email y contraseña
+- ✅ **Login** con JWT tokens seguros
+- ✅ **Refresh tokens** para sesiones persistentes
+- ✅ **Logout** con limpieza completa de sesión
+- ✅ **Rutas protegidas** - acceso restringido sin autenticación
+- ✅ **Manejo de sesiones expiradas** con redirecciones automáticas
 
-### 🎨 UX
-- ✅ **Navegación intuitiva** con breadcrumbs y botones que tienen sentido
-- ✅ **Loading states** porque waiting without feedback es torture
-- ✅ **Error handling** con mensajes que ayudan, no confunden
-- ✅ **Responsive design** que se ve bien en cualquier pantalla
-- ✅ **Toggle buttons** entre gráficas y tablas súper smooth
-- ✅ **Sidebar informativo** que no estorba pero está ahí cuando lo necesitás
+### 🎨 Experiencia de usuario
+- ✅ **Navegación intuitiva** con breadcrumbs y botones claros
+- ✅ **Estados de carga** para mejor feedback al usuario
+- ✅ **Manejo de errores** con mensajes informativos
+- ✅ **Diseño responsive** optimizado para cualquier pantalla
+- ✅ **Botones de alternancia** entre gráficas y tablas con transiciones suaves
+- ✅ **Sidebar informativo** discreto pero accesible cuando es necesario
 
 ---
 
@@ -167,57 +167,57 @@ Armé todo con una **separación frontend-backend clara**, comunicándose por AP
                                    └─────────────────┘
 ```
 
-### 🚀 El backend
+### 🚀 Backend
 
-**Lo que elegí y por qué:**
-- **FastAPI** - Porque es rápido, moderno, y la documentación automática es una belleza
-- **SQLAlchemy** - Para no escribir SQL a mano como en los viejos tiempos  
-- **Alembic** - Migraciones automáticas (porque trackear cambios de DB manualmente es un dolor)
-- **JWT con Refresh Tokens** - Autenticación moderna que no te hace loguear cada 5 minutos
-- **PostgreSQL en prod, SQLite en dev** - Porque desarrollo local debe ser simple
-- **Pytest** - Testing que realmente funciona y no es una tortura escribir
+**Tecnologías seleccionadas y justificación:**
+- **FastAPI** - Framework rápido y moderno con documentación automática
+- **SQLAlchemy** - ORM robusto para manejo de base de datos  
+- **Alembic** - Sistema de migraciones automáticas para control de versiones de esquema
+- **JWT con Refresh Tokens** - Autenticación moderna con sesiones persistentes
+- **PostgreSQL en producción, SQLite en desarrollo** - Flexibilidad entre entornos
+- **Pytest** - Framework de testing completo y confiable
 
-**Lo que me gusta del backend:**
-- Auto-documentación con Swagger (probala en `/docs`)
+**Características destacadas del backend:**
+- Auto-documentación con Swagger (disponible en `/docs`)
 - Validación automática con Pydantic v2
-- Type hints en todo lado (mi IDE me ama)
-- Tests que cubren todo lo importante
-- Manejo de errores que no te deja adivinando
+- Type hints completos para mejor mantenimiento
+- Cobertura de tests integral
+- Manejo de errores informativo
 
-### 🎨 El frontend 
+### 🎨 Frontend
 
-**Stack:**
-- **React 18 + TypeScript** - Porque JavaScript sin tipos en proyectos serios es masoquismo
-- **Vite** - Build tool que no te hace esperar 10 minutos por cada cambio
-- **Tailwind CSS** - CSS utility-first que hace que diseñar sea divertido otra vez
-- **Chart.js** - Para gráficas que no parecen hechas en Excel 2003
-- **React Hook Form + Zod** - Formularios que validan bien y no rompen
+**Stack tecnológico:**
+- **React 18 + TypeScript** - Desarrollo robusto con tipado estático
+- **Vite** - Build tool de alto rendimiento
+- **Tailwind CSS** - Framework CSS utility-first para diseño eficiente
+- **Chart.js** - Biblioteca de gráficas profesionales
+- **React Hook Form + Zod** - Manejo de formularios con validación
 
-**Lo que más me gusta de cómo quedó:**
-- **Responsive design** que se ve bien en cualquier dispositivo
-- **Loading states** everywhere (porque waiting in silence is torture)
-- **Error boundaries** que atrapan cosas antes de que explote todo
+**Características técnicas destacadas:**
+- **Diseño responsive** optimizado para todos los dispositivos
+- **Estados de carga** para mejor experiencia de usuario
+- **Error boundaries** para manejo robusto de errores
 - **Type safety** completo entre frontend y backend
-- **Code splitting** automático (performance matters)
+- **Code splitting** automático para optimización de rendimiento
 
-### 🚀 Deploy y DevOps 
+### 🚀 DevOps y Despliegue
 
-**Cómo lo deployé:**
-- **Render.com** - Elegí esto porque es simple pero potente
-- **Docker** para el backend (multi-stage builds para que sea liviano)
-- **PostgreSQL gestionada** con backups automáticos
-- **CDN global** para el frontend (fast loading everywhere)
-- **SSL automático** porque security first
+**Plataforma de despliegue:**
+- **Render.com** - Platform as a Service confiable
+- **Docker** para el backend con builds multi-etapa optimizados
+- **PostgreSQL gestionada** con respaldos automáticos
+- **CDN global** para el frontend
+- **SSL automático** para seguridad
 
-**Lo que pasa cuando hago push:**
-- GitHub Actions corre todos los tests
-- Si todo pasa, Render hace deploy automático
-- Rolling deployment sin downtime
+**Pipeline de CI/CD:**
+- GitHub Actions ejecuta todos los tests
+- Despliegue automático tras aprobación de tests
+- Rolling deployment sin tiempo de inactividad
 - Health checks automáticos
-- Si algo se rompe, rollback automático
+- Rollback automático en caso de fallas
 
-**Environments que manejo:**
-- **Local**: SQLite + desarrollo rápido
+**Gestión de entornos:**
+- **Local**: SQLite + servidor de desarrollo
 - **Production**: PostgreSQL + todas las optimizaciones
 
 ---
@@ -323,19 +323,19 @@ Armé todo con una **separación frontend-backend clara**, comunicándose por AP
 ### Prerrequisitos
 - Python 3.9+
 - Node.js 16+
-**Steps para tenerlo funcionando:**
+**Pasos para la instalación:**
 
-### 1. Cloná el repo
+### 1. Clonar el repositorio
 ```bash
 git clone https://github.com/lobami/test_dw_lmm.git
 cd test_dw_lmm
 ```
 
-### 2. Backend setup
+### 2. Configuración del backend
 ```bash
 cd backend
 
-# Entorno virtual (porque dependencies globales son el caos)
+# Crear entorno virtual
 python -m venv .venv
 source .venv/bin/activate  # Windows: .venv\Scripts\activate
 
